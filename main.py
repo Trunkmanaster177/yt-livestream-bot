@@ -9,8 +9,8 @@ except ImportError:
     os.system("pip install gdown")
     import gdown
 
-# Google Drive file ID
-file_id = "1PfbX9h03s-_PR9BjJZvC3wLmlfndv4yC"
+# Google Drive file ID (extracted from the link)
+file_id = "1QLwRfy9p0kBWBWuWjjjZs79MdoRGEQiw"
 video_file = "video.mp4"
 
 # Download the video if not present
@@ -20,7 +20,7 @@ if not os.path.exists(video_file):
     print("Download complete.")
 
 # YouTube stream key
-stream_key = "a2wv-bcfa-167e-f4hr-eyx6"
+stream_key = "krp8-ug6g-a8a0-9m5b-a9gd"
 rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{stream_key}"
 
 # Start streaming using FFmpeg
