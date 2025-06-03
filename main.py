@@ -1,8 +1,12 @@
 import subprocess
 
-image_file = 'your_image.jpg'  # your downloaded image filename here
+# Image file name
+image_file = 'your_image.png'
+
+# Your YouTube stream key (hardcoded)
 stream_key = '0u91-thf0-2yca-3x17-3f39'
 
+# FFmpeg command to loop image and stream to YouTube
 ffmpeg_command = [
     'ffmpeg',
     '-loop', '1',
@@ -22,4 +26,5 @@ ffmpeg_command = [
     f'rtmp://a.rtmp.youtube.com/live2/{stream_key}'
 ]
 
+# Run the command
 subprocess.run(ffmpeg_command)
